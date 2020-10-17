@@ -4,26 +4,35 @@
 
     // Import Swiper styles
     import 'swiper/swiper.scss';
-    let items = [1,2,3,4,5,6,7,8,9,10];
-    export let data;
-</script>
 
-<Swiper
-	spaceBetween={2}
+    function titleCase(str) {
+        return str.toLowerCase().split(' ').map(function(word) {
+        return (word.charAt(0).toUpperCase() + word.slice(1));
+        }).join(' ');
+    }
+
+    export let data;
+    console.log(data);
+</script>
+    <!-- spaceBetween={2}
     slidesPerView={5}
-    loop={true}
-	on:slideChange={() => console.log('slide change')}
+    	on:slideChange={() => console.log('slide change')}
 	on:swiper={(e) => console.log(e.detail[0])} >
-    {#each data as item,key}
-        <SwiperSlide>
-            <img src="{item.media}" alt="pic" class="slider-image" />
-        </SwiperSlide>
+ -->
+<Swiper loop={true} slidesPerView={3} spaceBetween={2}>
+    {#each data as boat}
+    <SwiperSlide>
+        <div>
+            <img src="{boat.media}" alt="pic" class="slider-image" /><br />
+            <p class="text-center">{boat.year} {boat.make} {boat.model} <br /> "{titleCase(boat.boatName)}"</p>
+        </div>
+    </SwiperSlide>
     {/each}
 </Swiper>
 
 <style>
     .slider-image  {
-        width: 17vw;
-        height: 10vw;
+        width: 27vw;
+        height: 13vw;
     }
 </style>
