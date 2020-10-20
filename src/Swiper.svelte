@@ -12,7 +12,6 @@
     }
 
     export let data;
-    console.log(data);
 </script>
     <!-- spaceBetween={2}
     slidesPerView={5}
