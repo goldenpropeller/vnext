@@ -18,7 +18,8 @@
     <SwiperSlide>
         <div>
             <img src="{boat.media}" alt="pic" class="slider-image" /><br />
-            <p class="text-center">{boat.year} {boat.make} {boat.model} <br /> "{titleCase(boat.boatName)}"</p>
+            <p class="text-center text-justify text-truncate mt-2 mb-0">{boat.year} {boat.make} {boat.model}</p>
+            <p class="text-center text-justify text-capitalize mt-0">"{titleCase(boat.boatName)}"</p>
         </div>
     </SwiperSlide>
     {/each}
