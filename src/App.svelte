@@ -1,5 +1,5 @@
 <script>
-  import Header from './header.svelte';
+  import NavBar from './NavBar.svelte';
   import Hero from './hero.svelte';
   import Footer from './footer.svelte';
   import Swiper from './Swiper.svelte';
@@ -18,7 +18,7 @@
 </script>
 
 <main class="container">
-  <Header />  
+  <NavBar />  
   <Hero />
   <h4><img class="img-fluid logo" src="logo.png" style="height:2rem;margin-right:0.5em;" alt="logo">Recently viewed</h4>
   <Swiper data={Recent} />

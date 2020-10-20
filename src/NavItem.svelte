@@ -1,0 +1,9 @@
+<script>
+  export let href;
+</script>
+
+<li class="nav-item">
+    <a class="nav-link" href="{href}">
+        <slot></slot>
+    </a>
+</li>
