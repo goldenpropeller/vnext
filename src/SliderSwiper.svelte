@@ -2,8 +2,14 @@
     import Swiper from './Swiper.svelte';
     export let data;
 </script>
-<h4>
-    <img class="img-fluid logo" src="logo.png" style="height:2rem;margin-right:0.5em;" alt="logo">
-    {data.t}
-</h4>
+
+
+<p class="align-center">
+    <img class="img-fluid" src="logo.png" alt="logo">
+    <span class="h4">{data.t}</span>
+</p>
 <Swiper data={data.d} />
+
+<style>
+    img {height:2rem;margin-right:0.5em;}
+</style>

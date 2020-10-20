@@ -13,11 +13,6 @@
 
     export let data;
 </script>
-    <!-- spaceBetween={2}
-    slidesPerView={5}
-    	on:slideChange={() => console.log('slide change')}
-	on:swiper={(e) => console.log(e.detail[0])} >
- -->
 <Swiper loop={true} slidesPerView={3} spaceBetween={2}>
     {#each data as boat}
     <SwiperSlide>
