@@ -4,12 +4,15 @@
 </script>
 
 
-<p class="align-center">
-    <img class="img-fluid" src="logo.png" alt="logo">
-    <span class="h4">{data.t}</span>
-</p>
+<p><a class="navbar-brand add-prop-left" href="#"><h4>{data.t}</h4></a></p>
 <Swiper data={data.d} />
 
 <style>
-    img {height:2rem;margin-right:0.5em;}
+    .add-prop-left{
+    background-image: url(/logo.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-left:3.5rem;
+}
 </style>

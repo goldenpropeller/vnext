@@ -1,3 +1,17 @@
 a:hover {
 	color: #D4AF37 !important;
 }
+body {
+    background-color: #343a40;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #D4AF37 !important;
+}
+
+.add-prop-left{
+    background-image: url(/logo.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-left:3rem;
+}

@@ -2,23 +2,20 @@
     import NavItem from './NavItem.svelte';
     import SearchIcon from './SearchIcon.svelte'
     import PersonIcon from './PersonIcon.svelte'
-    // import PropellerIcon from './PropellerIcon.svelte'
+    import SliderSwiper from './SliderSwiper.svelte';
+    import {SliderDatasets as datas} from './data/DataSets.js'
   </script>
 
 <style>
     .navbar-brand {
-        background-image: url(/logo.png);
-        background-position: left;
-        background-repeat: no-repeat;
-        background-size: contain;
-        padding-left:3rem;
+        font-family: Lobster,Arial, Helvetica, sans-serif;
         color: #D4AF37;
     }
 </style>
 <header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
-        <a class="navbar-brand" href="#">GoldenPropeller.com</a>
+        <a class="navbar-brand add-prop-left" href="#">GoldenPropeller.com</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -35,8 +32,8 @@
     </nav>
 </header>
   
-  <main>
-  
+  <main class="">
+    <div class="container">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -45,7 +42,7 @@
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active" data-interval="30000">
-            <img src="dollarflag.gif" alt="dollar bill" />
+            <img src="dollar.jpg" alt="dollar bill" />
             <div class="container">
                 <div class="carousel-caption text-left text-dark text-center mx-auto">
                   <h1>List your boat for a dollar a day!</h1>
@@ -84,6 +81,13 @@
         <span class="visually-hidden">Next</span>
       </a>
     </div>
+    </div>
+<div class="container">
+    {#each datas as data}
+    <SliderSwiper {data} />
+{/each}
+</div>
+    
   
   
     <!-- Marketing messaging and featurettes
