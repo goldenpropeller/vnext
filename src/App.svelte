@@ -45,8 +45,8 @@
             <img src="dollar.jpg" alt="dollar bill" />
             <div class="container">
                 <div class="carousel-caption text-left text-dark text-center mx-auto">
-                  <h1>List your boat for a dollar a day!</h1>
-                  <p>(FIRST WEEK IS "FREE" FOR NEW LISTINGS)</p>
+                  <h2>First Week Free!</h2>
+                  <p>List for $1/day</p>
                   <p><a class="btn btn-lg btn-dark" href="#" role="button">Sign up today</a></p>
                 </div>
             </div>
@@ -55,8 +55,8 @@
             <img src="sailingaway.jpg" alt="sailing away" />
             <div class="container">
                 <div class="carousel-caption text-left text-dark text-center mx-auto">
-                  <h1>Premium listings available!</h1>
-                  <p>(WHEN YOU'RE READY FOR YOUR BOAT TO SAIL AWAY)</p>
+                  <h2>Videos!</h2>
+                  <p>Premium Listings = More Features</p>
                   <p><a class="btn btn-lg btn-dark" href="#" role="button">Request more info</a></p>
                 </div>
             </div>
@@ -65,8 +65,8 @@
             <img src="wavecrash.gif" alt="wave crashing on boat" />
             <div class="container">
                 <div class="carousel-caption text-left text-dark text-center mx-auto">
-                  <h1>Selling your boat can be tough!</h1>
-                  <p>(LET US HELP NAVIGATE THE ROUGH WATERS)</p>
+                  <h2>We can help!</h2>
+                  <p>Selling solo is rough</p>
                   <p><a class="btn btn-lg btn-dark" href="#" role="button">Tell me more!</a></p>
                 </div>
             </div>
