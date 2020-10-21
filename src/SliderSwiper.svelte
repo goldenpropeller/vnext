@@ -1,9 +1,15 @@
 <script>
     import Swiper from './Swiper.svelte';
     export let data;
+    console.log(data)
 </script>
-<h4>
-    <img class="img-fluid logo" src="logo.png" style="height:2rem;margin-right:0.5em;" alt="logo">
-    {data.t}
-</h4>
+
+
+<h1 class="h4 add-prop-left">{data.t}</h1>
 <Swiper data={data.d} />
+
+<style>
+    h1{
+        margin-left: 2rem;
+    }
+</style>

@@ -1,5 +1,5 @@
 import {boats as db} from './data.js';
-const boats = db.filter(x=>x.media).filter(x=>x.boatName).filter(x=>x.media);
+const boats = db.filter(x=>x.media).filter(x=>x.boatName);
 //recently viewed, recommended for you, repeat sections for each type, they should order themselves based on past viewing habits
 //random values from an array
 const rv = (arr,n) => arr.sort(() => .5 - Math.random()).slice(0,n)
