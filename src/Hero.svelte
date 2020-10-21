@@ -22,9 +22,10 @@
     top: 0;
     left: 0; */
     min-width: 100%;
-    height: 20rem;
+    height: 100%;
     opacity: 0.25;
     object-fit: cover;
+    object-position: center;
   }
 </style>
 
