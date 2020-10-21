@@ -1,18 +1,15 @@
 <script>
     import Swiper from './Swiper.svelte';
     export let data;
+    console.log(data)
 </script>
 
 
-<p><a class="navbar-brand add-prop-left" href="#"><h4>{data.t}</h4></a></p>
+<h1 class="h4 add-prop-left">{data.t}</h1>
 <Swiper data={data.d} />
 
 <style>
-    .add-prop-left{
-    background-image: url(/logo.png);
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: contain;
-    padding-left:3.5rem;
-}
+    h1{
+        margin-left: 2rem;
+    }
 </style>

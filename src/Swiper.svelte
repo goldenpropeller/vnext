@@ -13,21 +13,25 @@
 
     export let data;
 </script>
-<Swiper loop={true} slidesPerView={3} spaceBetween={2}>
+
+<!-- <div class="carousel"> -->
+<Swiper loop={true} slidesPerView={3} freeMode={true}>
     {#each data as boat}
     <SwiperSlide>
         <div>
-            <img src="{boat.media}" alt="pic" class="slider-image" /><br />
-            <p class="text-center text-justify text-truncate mt-2 mb-0">{boat.year} {boat.make} {boat.model}</p>
-            <p class="text-center text-justify text-capitalize mt-0">"{titleCase(boat.boatName)}"</p>
+        <img src="{boat.media}" alt="pic" class="slider-image" />
+        <p class="text-center text-justify text-truncate mt-2 mb-0">{boat.year} {boat.make} {boat.model}</p>
+        <p class="text-center text-justify text-capitalize mt-0">"{boat.boatName.toLowerCase()}"</p>
         </div>
     </SwiperSlide>
     {/each}
 </Swiper>
 
 <style>
-    .slider-image  {
-        width: 27vw;
-        height: 13vw;
+    img {
+      min-width: 100%;
+      height: 15rem;
+      object-fit: contain;
+      object-position: center;
     }
 </style>
