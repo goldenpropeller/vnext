@@ -5,7 +5,7 @@
 </script>
 
 
-<h1 class="h4 add-prop-left">{data.t}</h1>
+<h1 class="h4 add-prop-left">{data.t}<a class="ml-4" href="#">see all</a></h1>
 <Swiper data={data.d} />
 
 <style>

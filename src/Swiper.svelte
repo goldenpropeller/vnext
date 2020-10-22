@@ -41,9 +41,9 @@
     {#each data as boat}
     <SwiperSlide>
         <div>
-        <img src="{boat.media}" alt="pic" class="slider-image" />
-        <p class="text-center text-justify text-truncate mt-2 mb-0">{boat.year} {boat.make} {boat.model}</p>
-        <p class="text-center text-justify text-capitalize mt-0">"{boat.boatName.toLowerCase()}"</p>
+        <img loading=lazy src="{boat.media}" alt="{boat.year} {boat.make} {boat.model}" class="slider-image" />
+        <p class="text-center text-justify text-truncate mt-2 mb-4">{boat.year} {boat.make} {boat.model}</p>
+        <!-- <p class="text-center text-justify text-capitalize mt-0">"{boat.boatName.toLowerCase()}"</p> -->
         </div>
     </SwiperSlide>
     {/each}
