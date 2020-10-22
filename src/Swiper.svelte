@@ -36,25 +36,39 @@
     export let data;
 </script>
 
-<!-- <div class="carousel"> -->
 <Swiper loop={true} slidesPerView={1} freeMode={true} {breakpoints}>
     {#each data as boat}
     <SwiperSlide>
         <div>
         <img loading=lazy src="{boat.media}" alt="{boat.year} {boat.make} {boat.model}" class="slider-image" />
-        <p class="text-center text-justify text-truncate mt-2 mb-4">{boat.year} {boat.make} {boat.model}</p>
+        <span class="badge bg-dark myinfo text-truncate">{boat.year} {boat.make} {boat.model}</span>
+        <!-- <div class="bg-info text-dark myinfo">{boat.year} {boat.make} {boat.model}</div> -->
+        <!-- <p class="text-center text-justify text-truncate mt-2 mb-4">{boat.year} {boat.make} {boat.model}</p> -->
         <!-- <p class="text-center text-justify text-capitalize mt-0">"{boat.boatName.toLowerCase()}"</p> -->
         </div>
     </SwiperSlide>
     {/each}
 </Swiper>
 
+
+
 <style>
+
     img {
       min-width: 100%;
-      height: 15rem;
+      height: 13rem;
       object-fit: cover;
       object-position: center;
     }
 
+    .myinfo {
+        left: 0;
+        margin: auto; 
+        position: absolute;
+        right: 0;
+        text-align: center;
+        bottom: 0.75em;
+        width: 80%;
+        z-index: 1;
+    }
 </style>

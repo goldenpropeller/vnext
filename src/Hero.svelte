@@ -27,6 +27,10 @@
     object-fit: cover;
     object-position: center;
   }
+  .carousel-control-prev,.carousel-control-next {
+    width:3rem !important;
+    background-color: rgba(100, 100, 100, .75) !important;
+  }
 </style>
 
 <div id="myCarousel" class="carousel slide my-4" data-ride="carousel">
