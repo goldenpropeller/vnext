@@ -7,9 +7,9 @@ const boats = db.filter(x=>x.media)//.filter(x=>x.boatName);
 const rv = (arr,n) => arr.sort(() => .5 - Math.random()).slice(0,n)
 
 const RandomDatasets = [
-    {t:"Sponsored Listings",d:rv(boats,15)},
-    {t:"Recently viewed",d:rv(boats,15)},
-    {t:"Recommended for you",d:rv(boats,15)},
+    {t:"Sponsored",d:rv(boats,15)},
+    {t:"Your Recent",d:rv(boats,15)},
+    {t:"Recommended",d:rv(boats,15)},
 ]
 
 //unique boat categories/class in our current db

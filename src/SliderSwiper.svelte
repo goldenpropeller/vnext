@@ -6,7 +6,7 @@
 </script>
 
 <div class="container w-100">
-<h1 class="h4 add-prop-left ml-4 mt-4">{data.t}<a class="ml-4" href="#" on:click={()=>{window.pushToast(msg)}}>see all</a></h1>
+<h1 class="h4 add-prop-left ml-4 mt-4 w-80 text-truncate">{data.t}<a class="float-right" href="#" on:click={(e)=>{e.preventDefault();window.pushToast(msg)}}>see all</a></h1>
 <Swiper data={data.d} />
 </div>
 <Toast />
