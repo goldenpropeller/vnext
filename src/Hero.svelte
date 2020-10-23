@@ -47,7 +47,7 @@
           <h2>First Week Free!</h2>
           <p>List for $1/day</p>
           <p>
-            <a class="btn btn-lg btn-dark" href="#" role="button">
+            <a class="btn btn-lg btn-dark" href="#" on:click={(e)=>{e.preventDefault();window.pushToast(msg)}} role="button">
               Sign up today
             </a>
           </p>
@@ -61,7 +61,7 @@
           <h2>Videos!</h2>
           <p>Premium Listings = More Features</p>
           <p>
-            <a class="btn btn-lg btn-dark" href="#" role="button">
+            <a class="btn btn-lg btn-dark" href="#" on:click={(e)=>{e.preventDefault();window.pushToast(msg)}} role="button">
               Request more info
             </a>
           </p>
@@ -75,7 +75,7 @@
           <h2>We can help!</h2>
           <p>Selling solo is rough</p>
           <p>
-            <a class="btn btn-lg btn-dark" href="#" role="button">
+            <a class="btn btn-lg btn-dark" href="#" on:click={(e)=>{e.preventDefault();window.pushToast(msg)}} role="button">
               Tell me more!
             </a>
           </p>
@@ -89,7 +89,7 @@
             <h2>Sounds great!</h2>
             <p>I know, right?</p>
             <p>
-              <a class="btn btn-lg btn-dark" href="#" role="button">
+              <a class="btn btn-lg btn-dark" href="#" on:click={(e)=>{e.preventDefault();window.pushToast(msg)}} role="button">
                 Sign me up!
               </a>
             </p>
@@ -112,3 +112,8 @@
     <span class="carousel-control-next-icon" aria-hidden="true" />
   </a>
 </div>
+
+<script>
+  import Toast from './Toast.svelte'
+  let msg = "In the future, these links will lead to a various high level calls to action such as signing up for service or contacting sales for more information."
+</script>

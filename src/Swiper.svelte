@@ -70,5 +70,6 @@
         bottom: 0.75em;
         width: 80%;
         z-index: 1;
+        font-size: 1rem;
     }
 </style>
