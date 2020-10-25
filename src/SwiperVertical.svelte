@@ -20,7 +20,7 @@
       alt="{boat.year}
       {boat.make}
       {boat.model}" />
-      <h5 class="card-title text-center text-truncate mt-3">{boat.year} {boat.make} {boat.model}</h5>
+      <a href="boat/{boat.id}"><h5 class="card-title text-center text-truncate mt-3">{boat.year} {boat.make} {boat.model}</h5></a>
   </div>
   {/each}
 

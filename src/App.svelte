@@ -3,7 +3,8 @@
   import Header from './Header.svelte'
   import Footer from './Footer.svelte'
   import Home from './Home.svelte'
-  import Category from './Category.svelte'
+  import Boats from './Boats.svelte'
+  import Boat from './Boat.svelte'
   // import {cat} from './state'
 </script>
 
@@ -16,10 +17,16 @@
 
 <Router>
 	<Header />
-  <Route path="cat/*">
+  <Route path="boats/*">
     <Route path="/"><Home /></Route>
     <Route path=":id" let:params>
-      <Category id={params.id} />
+      <Boats id={params.id} />
+    </Route>
+  </Route>
+  <Route path="boat/*">
+    <Route path="/"><Home /></Route>
+    <Route path=":id" let:params>
+      <Boat id={params.id} />
     </Route>
   </Route>
   <Route><Home /></Route>
