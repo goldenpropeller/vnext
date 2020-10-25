@@ -16,7 +16,12 @@
 
 <Router>
 	<Header />
-  <Route path="cat/*"><Category /></Route>
+  <Route path="cat/*">
+    <Route path="/"><Home /></Route>
+    <Route path=":id" let:params>
+      <Category id={params.id} />
+    </Route>
+  </Route>
   <Route><Home /></Route>
   <Footer />
 </Router>

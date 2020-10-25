@@ -1,15 +1,19 @@
 <script>
-  import { Router, Route, Link } from 'svelte-navigator'
+    import { Link } from 'svelte-navigator'
+      // Import Swiper Svelte components
+    import SwiperVertical from './SwiperVertical.svelte'
+    import { SliderDatasets as datas } from './data/DataSets'
+    export let id;
+    const data = datas.filter(x=>x.t === id)[0];
 </script>
 
-<Router>
-  <article>
-    <Route path=":id" let:params>
-      <div class="container mt-5">
-        <h2>ID: {params.id}</h2>
-        <p>Category Page Details</p>
-        <Link to="/">Go back to the landing page</Link>
-      </div>
-    </Route>
-  </article>
-</Router>
+<div class="container w-100"><br /><br />
+    <h1 class="h4 add-prop-left mt-4 w-80 text-truncate">{id}
+        <Link class="float-right" to="/">Home</Link>
+        <!-- <Link to="/">Back to Home Page</Link> -->
+    </h1>
+    <SwiperVertical data={data.d} />
+</div>
+
+
+
