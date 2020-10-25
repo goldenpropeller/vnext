@@ -2,13 +2,14 @@ body {
     padding: 3rem 0;
 }
 a:hover {
-	color: #00A8E1;// #D4AF37 !important;
+    color: #00A8E1!important;
+    /* #D4AF37 !important; */
 }
 body {
     background-color: #343a40;
 }
 h1, h2, h3, h4, h5, h6 {
-    color: #00A8E1;// #D4AF37 !important;
+    color: #00A8E1!important;
 }
 
 .add-prop-left{
@@ -18,3 +19,7 @@ h1, h2, h3, h4, h5, h6 {
     background-size: contain;
     padding-left:3rem;
 }
+.navbar-brand {
+    font-family: Lobster, Arial, Helvetica, sans-serif;
+    color: #d4af37!important;
+  }

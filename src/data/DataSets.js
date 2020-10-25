@@ -18,7 +18,6 @@ const uqbc=db.map(x=>x.class).filter((v, i, a) => a.indexOf(v) === i)
 //cats with more results
 const m1 = (v) => ({"cat":v,"cnt":db.filter(x=>x.class === v).length})
 const ubcc = uqbc.map(m1)
-console.log(ubcc)
 const mbcc = ubcc.filter(x=>x.cnt > 9)
 const gi = (cat) => {
     let tval = bc.filter(x=>x.value === cat).map(x=>x.name)[0]
