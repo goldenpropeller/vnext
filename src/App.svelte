@@ -1,11 +1,17 @@
 <script>
-  import { Router, Link, Route } from "svelte-navigator";
+  // import { Router, Link, Route } from "svelte-navigator";
+  import Router from 'svelte-spa-router'
   import Header from './Header.svelte'
   import Footer from './Footer.svelte'
   import Home from './Home.svelte'
   import Boats from './Boats.svelte'
   import Boat from './Boat.svelte'
   // import {cat} from './state'
+  const routes = {
+    '/boat/:id':Boat,
+    '/boats/:id':Boats,
+    '*':Home,
+}
 </script>
 
 <svelte:head>
@@ -15,7 +21,11 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
 </svelte:head>
 
-<Router>
+<Header />
+<Router {routes}/>
+<Footer />
+
+<!-- <Router>
 	<Header />
   <Route path="boats/*">
     <Route path="/"><Home /></Route>
@@ -31,4 +41,4 @@
   </Route>
   <Route><Home /></Route>
   <Footer />
-</Router>
+</Router> -->
