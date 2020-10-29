@@ -1,5 +1,5 @@
 <script>
-  import { Link } from 'svelte-navigator'
+  // import { Link } from 'svelte-navigator'
   import SearchIcon from './SearchIcon.svelte'
   import PersonIcon from './PersonIcon.svelte'
   import Toast from './Toast.svelte'
@@ -15,7 +15,8 @@
 <header>
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <div class="container-fluid">
-        <Link to="/" class="navbar-brand add-prop-left">GoldenPropeller.com</Link>
+        <!-- <Link to="/" class="navbar-brand add-prop-left">GoldenPropeller.com</Link> -->
+        <a href="/" class="navbar-brand add-prop-left">GoldenPropeller.com</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -28,11 +29,11 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav ml-auto mb-2 mb-md-0">
-          <li class="nav-item"><Link class="nav-link" to="/" on:click={hc}><SearchIcon /></Link></li>
-          <li class="nav-item"><Link class="nav-link" to="/" on:click={hc}>Buy</Link></li>
-          <li class="nav-item"><Link class="nav-link" to="/" on:click={hc}>Sell</Link></li>
-          <li class="nav-item"><Link class="nav-link" to="/" on:click={hc}>Services</Link></li>
-          <li class="nav-item"><Link class="nav-link" to="/" on:click={hc}><PersonIcon /></Link></li>
+          <li class="nav-item"><a class="nav-link" href="/" on:click={hc}><SearchIcon /></a></li>
+          <li class="nav-item"><a class="nav-link" href="/" on:click={hc}>Buy</a></li>
+          <li class="nav-item"><a class="nav-link" href="/" on:click={hc}>Sell</a></li>
+          <li class="nav-item"><a class="nav-link" href="/" on:click={hc}>Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="/" on:click={hc}><PersonIcon /></a></li>
         </ul>
       </div>
     </div>

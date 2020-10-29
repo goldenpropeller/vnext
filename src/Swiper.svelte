@@ -41,7 +41,7 @@
     <SwiperSlide>
         <div>
         <img loading=lazy src="{boat.media}" alt="{boat.year} {boat.make} {boat.model}" class="slider-image" />
-        <a href="boat/{boat.id}" class="badge bg-dark myinfo text-truncate">{boat.year} {boat.make} {boat.model}</a>
+        <a href="#/boat/{boat.id}" class="badge bg-dark myinfo text-truncate">{boat.year} {boat.make} {boat.model}</a>
         <!-- <div class="bg-info text-dark myinfo">{boat.year} {boat.make} {boat.model}</div> -->
         <!-- <p class="text-center text-justify text-truncate mt-2 mb-4">{boat.year} {boat.make} {boat.model}</p> -->
         <!-- <p class="text-center text-justify text-capitalize mt-0">"{boat.boatName.toLowerCase()}"</p> -->
