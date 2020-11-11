@@ -6,10 +6,14 @@
   import Home from './Home.svelte'
   import Boats from './Boats.svelte'
   import Boat from './Boat.svelte'
+  import Pay from './Pay.svelte'
+  import AboutUs from './AboutUs.svelte'
   // import {cat} from './state'
   const routes = {
     '/boat/:id':Boat,
     '/boats/:id':Boats,
+    '/pay':Pay,
+    '/aboutus':AboutUs,
     '*':Home,
 }
 </script>
