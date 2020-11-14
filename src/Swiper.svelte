@@ -38,15 +38,17 @@
 
 <Swiper loop={true} slidesPerView={1} freeMode={true} {breakpoints}>
     {#each data as boat}
+    {#if boat.media}
     <SwiperSlide>
         <div>
-        <img loading=lazy src="{boat.media}" alt="{boat.year} {boat.make} {boat.model}" class="slider-image" />
+        <img loading=lazy src="{'/img/277_' + boat.media.split('/')[boat.media.split('/').length-1]}" alt="{boat.year} {boat.make} {boat.model}" class="slider-image" />
         <a href="#/boat/{boat.id}" class="badge bg-dark myinfo text-truncate">{boat.year} {boat.make} {boat.model}</a>
         <!-- <div class="bg-info text-dark myinfo">{boat.year} {boat.make} {boat.model}</div> -->
         <!-- <p class="text-center text-justify text-truncate mt-2 mb-4">{boat.year} {boat.make} {boat.model}</p> -->
         <!-- <p class="text-center text-justify text-capitalize mt-0">"{boat.boatName.toLowerCase()}"</p> -->
         </div>
     </SwiperSlide>
+    {/if}
     {/each}
 </Swiper>
 
